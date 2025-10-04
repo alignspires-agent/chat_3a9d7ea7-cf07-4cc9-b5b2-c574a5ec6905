@@ -1,0 +1,748 @@
+Lambda Execution Result (Latest Run):
+INIT_REPORT Init Duration: 9973.84 ms	Phase: init	Status: timeout
+
+=== Experiment Errors ===
+
+2025-10-04 03:46:36,307 - INFO - Lévy-Prokhorov Robust Conformal Prediction for Financial Data
+
+2025-10-04 03:46:36,307 - INFO - This implementation demonstrates robust uncertainty quantification under distribution shifts
+
+2025-10-04 03:46:36,307 - INFO - Starting Lévy-Prokhorov Robust Conformal Prediction Experiment
+
+2025-10-04 03:46:36,307 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.1, rho=0.05
+
+2025-10-04 03:46:36,307 - INFO - Generating 2000 synthetic financial data points
+
+2025-10-04 03:46:36,317 - INFO - Generated synthetic data: X shape (1995, 5), y shape (1995,)
+
+2025-10-04 03:46:36,317 - INFO - Data split - Calibration: 1495, Test: 500
+
+2025-10-04 03:46:36,317 - INFO - 
+
+Testing configuration: Standard
+
+2025-10-04 03:46:36,317 - INFO - Parameters: epsilon=0.0, rho=0.0
+
+2025-10-04 03:46:36,317 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.0, rho=0.0
+
+2025-10-04 03:46:36,317 - INFO - Fitting robust conformal predictor
+
+2025-10-04 03:46:36,317 - INFO - Calculating robust quantile threshold
+
+2025-10-04 03:46:36,409 - INFO - Standard quantile: 0.091460
+
+2025-10-04 03:46:36,409 - INFO - Robust quantile (before epsilon): 0.091460
+
+2025-10-04 03:46:36,409 - INFO - Final robust quantile: 0.091460
+
+2025-10-04 03:46:36,409 - INFO - Successfully fitted model with quantile threshold: 0.091460
+
+2025-10-04 03:46:36,409 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:36,409 - INFO - Test coverage: 0.896 (target: 0.9)
+
+2025-10-04 03:46:36,409 - INFO - Average interval width: 0.182919
+
+2025-10-04 03:46:36,409 - INFO - Evaluating model robustness under distribution shifts
+
+2025-10-04 03:46:36,410 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:36,410 - INFO - Test coverage: 0.566 (target: 0.9)
+
+2025-10-04 03:46:36,410 - INFO - Average interval width: 0.182919
+
+2025-10-04 03:46:36,410 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:36,410 - INFO - Test coverage: 0.890 (target: 0.9)
+
+2025-10-04 03:46:36,410 - INFO - Average interval width: 0.182919
+
+2025-10-04 03:46:36,410 - INFO - Robustness evaluation results:
+
+2025-10-04 03:46:36,410 - INFO -   original_coverage: 0.8900
+
+2025-10-04 03:46:36,410 - INFO -   shifted_coverage: 0.5660
+
+2025-10-04 03:46:36,410 - INFO -   coverage_difference: 0.3240
+
+2025-10-04 03:46:36,410 - INFO -   original_avg_width: 0.1829
+
+2025-10-04 03:46:36,410 - INFO -   shifted_avg_width: 0.1829
+
+2025-10-04 03:46:36,410 - INFO -   width_increase: -0.0000
+
+2025-10-04 03:46:36,410 - INFO -   robustness_ratio: 0.6360
+
+2025-10-04 03:46:36,410 - INFO - Completed Standard configuration
+
+2025-10-04 03:46:36,410 - INFO - 
+
+Testing configuration: Low Robustness
+
+2025-10-04 03:46:36,410 - INFO - Parameters: epsilon=0.05, rho=0.02
+
+2025-10-04 03:46:36,410 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.05, rho=0.02
+
+2025-10-04 03:46:36,410 - INFO - Fitting robust conformal predictor
+
+2025-10-04 03:46:36,410 - INFO - Calculating robust quantile threshold
+
+2025-10-04 03:46:36,411 - INFO - Standard quantile: 0.091315
+
+2025-10-04 03:46:36,411 - INFO - Robust quantile (before epsilon): 0.095233
+
+2025-10-04 03:46:36,411 - INFO - Final robust quantile: 0.145233
+
+2025-10-04 03:46:36,411 - INFO - Successfully fitted model with quantile threshold: 0.145233
+
+2025-10-04 03:46:36,411 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:36,411 - INFO - Test coverage: 0.986 (target: 0.9)
+
+2025-10-04 03:46:36,411 - INFO - Average interval width: 0.290466
+
+2025-10-04 03:46:36,411 - INFO - Evaluating model robustness under distribution shifts
+
+2025-10-04 03:46:36,411 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:36,411 - INFO - Test coverage: 0.752 (target: 0.9)
+
+2025-10-04 03:46:36,411 - INFO - Average interval width: 0.290466
+
+2025-10-04 03:46:36,411 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:36,411 - INFO - Test coverage: 0.994 (target: 0.9)
+
+2025-10-04 03:46:36,411 - INFO - Average interval width: 0.290466
+
+2025-10-04 03:46:36,411 - INFO - Robustness evaluation results:
+
+2025-10-04 03:46:36,411 - INFO -   original_coverage: 0.9940
+
+2025-10-04 03:46:36,411 - INFO -   shifted_coverage: 0.7520
+
+2025-10-04 03:46:36,411 - INFO -   coverage_difference: 0.2420
+
+2025-10-04 03:46:36,412 - INFO -   original_avg_width: 0.2905
+
+2025-10-04 03:46:36,412 - INFO -   shifted_avg_width: 0.2905
+
+2025-10-04 03:46:36,412 - INFO -   width_increase: 0.0000
+
+2025-10-04 03:46:36,412 - INFO -   robustness_ratio: 0.7565
+
+2025-10-04 03:46:36,412 - INFO - Completed Low Robustness configuration
+
+2025-10-04 03:46:36,412 - INFO - 
+
+Testing configuration: Medium Robustness
+
+2025-10-04 03:46:36,412 - INFO - Parameters: epsilon=0.1, rho=0.05
+
+2025-10-04 03:46:36,412 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.1, rho=0.05
+
+2025-10-04 03:46:36,412 - INFO - Fitting robust conformal predictor
+
+2025-10-04 03:46:36,412 - INFO - Calculating robust quantile threshold
+
+2025-10-04 03:46:36,412 - INFO - Standard quantile: 0.093045
+
+2025-10-04 03:46:36,412 - INFO - Robust quantile (before epsilon): 0.108675
+
+2025-10-04 03:46:36,412 - INFO - Final robust quantile: 0.208675
+
+2025-10-04 03:46:36,412 - INFO - Successfully fitted model with quantile threshold: 0.208675
+
+2025-10-04 03:46:36,412 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:36,412 - INFO - Test coverage: 1.000 (target: 0.9)
+
+2025-10-04 03:46:36,412 - INFO - Average interval width: 0.417350
+
+2025-10-04 03:46:36,412 - INFO - Evaluating model robustness under distribution shifts
+
+2025-10-04 03:46:36,412 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:36,413 - INFO - Test coverage: 0.908 (target: 0.9)
+
+2025-10-04 03:46:36,413 - INFO - Average interval width: 0.417350
+
+2025-10-04 03:46:36,413 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:36,413 - INFO - Test coverage: 1.000 (target: 0.9)
+
+2025-10-04 03:46:36,413 - INFO - Average interval width: 0.417350
+
+2025-10-04 03:46:36,413 - INFO - Robustness evaluation results:
+
+2025-10-04 03:46:36,413 - INFO -   original_coverage: 1.0000
+
+2025-10-04 03:46:36,413 - INFO -   shifted_coverage: 0.9080
+
+2025-10-04 03:46:36,413 - INFO -   coverage_difference: 0.0920
+
+2025-10-04 03:46:36,413 - INFO -   original_avg_width: 0.4173
+
+2025-10-04 03:46:36,413 - INFO -   shifted_avg_width: 0.4173
+
+2025-10-04 03:46:36,413 - INFO -   width_increase: -0.0000
+
+2025-10-04 03:46:36,413 - INFO -   robustness_ratio: 0.9080
+
+2025-10-04 03:46:36,413 - INFO - Completed Medium Robustness configuration
+
+2025-10-04 03:46:36,413 - INFO - 
+
+Testing configuration: High Robustness
+
+2025-10-04 03:46:36,413 - INFO - Parameters: epsilon=0.2, rho=0.1
+
+2025-10-04 03:46:36,413 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.2, rho=0.1
+
+2025-10-04 03:46:36,413 - INFO - Fitting robust conformal predictor
+
+2025-10-04 03:46:36,413 - INFO - Calculating robust quantile threshold
+
+2025-10-04 03:46:36,413 - INFO - Standard quantile: 0.093892
+
+2025-10-04 03:46:36,413 - INFO - Robust quantile (before epsilon): 0.193313
+
+2025-10-04 03:46:36,413 - INFO - Final robust quantile: 0.393313
+
+2025-10-04 03:46:36,413 - INFO - Successfully fitted model with quantile threshold: 0.393313
+
+2025-10-04 03:46:36,413 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:36,414 - INFO - Test coverage: 1.000 (target: 0.9)
+
+2025-10-04 03:46:36,414 - INFO - Average interval width: 0.786625
+
+2025-10-04 03:46:36,414 - INFO - Evaluating model robustness under distribution shifts
+
+2025-10-04 03:46:36,414 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:36,414 - INFO - Test coverage: 0.998 (target: 0.9)
+
+2025-10-04 03:46:36,414 - INFO - Average interval width: 0.786625
+
+2025-10-04 03:46:36,414 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:36,414 - INFO - Test coverage: 1.000 (target: 0.9)
+
+2025-10-04 03:46:36,414 - INFO - Average interval width: 0.786625
+
+2025-10-04 03:46:36,414 - INFO - Robustness evaluation results:
+
+2025-10-04 03:46:36,414 - INFO -   original_coverage: 1.0000
+
+2025-10-04 03:46:36,414 - INFO -   shifted_coverage: 0.9980
+
+2025-10-04 03:46:36,414 - INFO -   coverage_difference: 0.0020
+
+2025-10-04 03:46:36,414 - INFO -   original_avg_width: 0.7866
+
+2025-10-04 03:46:36,414 - INFO -   shifted_avg_width: 0.7866
+
+2025-10-04 03:46:36,414 - INFO -   width_increase: 0.0000
+
+2025-10-04 03:46:36,414 - INFO -   robustness_ratio: 0.9980
+
+2025-10-04 03:46:36,414 - INFO - Completed High Robustness configuration
+
+2025-10-04 03:46:36,414 - INFO - 
+
+============================================================
+
+2025-10-04 03:46:36,414 - INFO - FINAL RESULTS SUMMARY
+
+2025-10-04 03:46:36,414 - INFO - ============================================================
+
+2025-10-04 03:46:36,421 - INFO - 
+
+Configuration: Standard
+
+2025-10-04 03:46:36,421 - INFO -   Coverage: 0.896 (Target: 0.9)
+
+2025-10-04 03:46:36,421 - INFO -   Avg Interval Width: 0.182919
+
+2025-10-04 03:46:36,421 - INFO -   Robustness Ratio: 0.636
+
+2025-10-04 03:46:36,421 - INFO -   Coverage Under Shift: 0.566
+
+2025-10-04 03:46:36,421 - INFO - 
+
+Configuration: Low Robustness
+
+2025-10-04 03:46:36,421 - INFO -   Coverage: 0.986 (Target: 0.9)
+
+2025-10-04 03:46:36,421 - INFO -   Avg Interval Width: 0.290466
+
+2025-10-04 03:46:36,421 - INFO -   Robustness Ratio: 0.757
+
+2025-10-04 03:46:36,422 - INFO -   Coverage Under Shift: 0.752
+
+2025-10-04 03:46:36,422 - INFO - 
+
+Configuration: Medium Robustness
+
+2025-10-04 03:46:36,422 - INFO -   Coverage: 1.000 (Target: 0.9)
+
+2025-10-04 03:46:36,422 - INFO -   Avg Interval Width: 0.417350
+
+2025-10-04 03:46:36,422 - INFO -   Robustness Ratio: 0.908
+
+2025-10-04 03:46:36,422 - INFO -   Coverage Under Shift: 0.908
+
+2025-10-04 03:46:36,422 - INFO - 
+
+Configuration: High Robustness
+
+2025-10-04 03:46:36,422 - INFO -   Coverage: 1.000 (Target: 0.9)
+
+2025-10-04 03:46:36,422 - INFO -   Avg Interval Width: 0.786625
+
+2025-10-04 03:46:36,422 - INFO -   Robustness Ratio: 0.998
+
+2025-10-04 03:46:36,422 - INFO -   Coverage Under Shift: 0.998
+
+2025-10-04 03:46:36,423 - INFO - 
+
+============================================================
+
+2025-10-04 03:46:36,423 - INFO - BEST CONFIGURATION ANALYSIS
+
+2025-10-04 03:46:36,423 - INFO - ============================================================
+
+2025-10-04 03:46:36,423 - INFO - Best configuration: High Robustness
+
+2025-10-04 03:46:36,423 - INFO - Parameters: epsilon=0.2, rho=0.1
+
+2025-10-04 03:46:36,423 - INFO - Robustness ratio: 0.998
+
+2025-10-04 03:46:36,423 - INFO - Coverage under shift: 0.998
+
+2025-10-04 03:46:36,423 - INFO - Average interval width: 0.786625
+
+2025-10-04 03:46:36,423 - INFO - 
+
+============================================================
+
+2025-10-04 03:46:36,423 - INFO - KEY INSIGHTS
+
+2025-10-04 03:46:36,423 - INFO - ============================================================
+
+2025-10-04 03:46:36,423 - INFO - 1. Higher robustness parameters (epsilon, rho) generally improve coverage under distribution shifts
+
+2025-10-04 03:46:36,423 - INFO - 2. There is a trade-off between robustness and prediction interval width
+
+2025-10-04 03:46:36,423 - INFO - 3. The optimal configuration balances coverage guarantees with interval precision
+
+2025-10-04 03:46:36,423 - INFO - 4. Lévy-Prokhorov methodology provides principled robustness against both local and global distribution shifts
+
+2025-10-04 03:46:36,423 - INFO - 
+
+Experiment completed successfully!
+
+2025-10-04 03:46:36,423 - INFO - The results demonstrate the effectiveness of Lévy-Prokhorov robust conformal prediction
+
+2025-10-04 03:46:36,423 - INFO - for maintaining coverage guarantees in financial time series with distribution shifts.
+
+{
+
+"experimentStatusCode": 200,
+
+"body": {
+
+"message": "Experiment completed successfully",
+
+"returncode": 0,
+
+"stdout": "",
+
+"stderr": "2025-10-04 03:46:36,307 - INFO - L\u00e9vy-Prokhorov Robust Conformal Prediction for Financial Data\n2025-10-04 03:46:36,307 - INFO - This implementation demonstrates robust uncertainty quantification under distribution shifts\n2025-10-04 03:46:36,307 - INFO - Starting L\u00e9vy-Prokhorov Robust Conformal Prediction Experiment\n2025-10-04 03:46:36,307 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.1, rho=0.05\n2025-10-04 03:46:36,307 - INFO - Generating 2000 synthetic financial data points\n2025-10-04 03:46:36,317 - INFO - Generated synthetic data: X shape (1995, 5), y shape (1995,)\n2025-10-04 03:46:36,317 - INFO - Data split - Calibration: 1495, Test: 500\n2025-10-04 03:46:36,317 - INFO - \nTesting configuration: Standard\n2025-10-04 03:46:36,317 - INFO - Parameters: epsilon=0.0, rho=0.0\n2025-10-04 03:46:36,317 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.0, rho=0.0\n2025-10-04 03:46:36,317 - INFO - Fitting robust conformal predictor\n2025-10-04 03:46:36,317 - INFO - Calculating robust quantile threshold\n2025-10-04 03:46:36,409 - INFO - Standard quantile: 0.091460\n2025-10-04 03:46:36,409 - INFO - Robust quantile (before epsilon): 0.091460\n2025-10-04 03:46:36,409 - INFO - Final robust quantile: 0.091460\n2025-10-04 03:46:36,409 - INFO - Successfully fitted model with quantile threshold: 0.091460\n2025-10-04 03:46:36,409 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:36,409 - INFO - Test coverage: 0.896 (target: 0.9)\n2025-10-04 03:46:36,409 - INFO - Average interval width: 0.182919\n2025-10-04 03:46:36,409 - INFO - Evaluating model robustness under distribution shifts\n2025-10-04 03:46:36,410 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:36,410 - INFO - Test coverage: 0.566 (target: 0.9)\n2025-10-04 03:46:36,410 - INFO - Average interval width: 0.182919\n2025-10-04 03:46:36,410 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:36,410 - INFO - Test coverage: 0.890 (target: 0.9)\n2025-10-04 03:46:36,410 - INFO - Average interval width: 0.182919\n2025-10-04 03:46:36,410 - INFO - Robustness evaluation results:\n2025-10-04 03:46:36,410 - INFO -   original_coverage: 0.8900\n2025-10-04 03:46:36,410 - INFO -   shifted_coverage: 0.5660\n2025-10-04 03:46:36,410 - INFO -   coverage_difference: 0.3240\n2025-10-04 03:46:36,410 - INFO -   original_avg_width: 0.1829\n2025-10-04 03:46:36,410 - INFO -   shifted_avg_width: 0.1829\n2025-10-04 03:46:36,410 - INFO -   width_increase: -0.0000\n2025-10-04 03:46:36,410 - INFO -   robustness_ratio: 0.6360\n2025-10-04 03:46:36,410 - INFO - Completed Standard configuration\n2025-10-04 03:46:36,410 - INFO - \nTesting configuration: Low Robustness\n2025-10-04 03:46:36,410 - INFO - Parameters: epsilon=0.05, rho=0.02\n2025-10-04 03:46:36,410 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.05, rho=0.02\n2025-10-04 03:46:36,410 - INFO - Fitting robust conformal predictor\n2025-10-04 03:46:36,410 - INFO - Calculating robust quantile threshold\n2025-10-04 03:46:36,411 - INFO - Standard quantile: 0.091315\n2025-10-04 03:46:36,411 - INFO - Robust quantile (before epsilon): 0.095233\n2025-10-04 03:46:36,411 - INFO - Final robust quantile: 0.145233\n2025-10-04 03:46:36,411 - INFO - Successfully fitted model with quantile threshold: 0.145233\n2025-10-04 03:46:36,411 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:36,411 - INFO - Test coverage: 0.986 (target: 0.9)\n2025-10-04 03:46:36,411 - INFO - Average interval width: 0.290466\n2025-10-04 03:46:36,411 - INFO - Evaluating model robustness under distribution shifts\n2025-10-04 03:46:36,411 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:36,411 - INFO - Test coverage: 0.752 (target: 0.9)\n2025-10-04 03:46:36,411 - INFO - Average interval width: 0.290466\n2025-10-04 03:46:36,411 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:36,411 - INFO - Test coverage: 0.994 (target: 0.9)\n2025-10-04 03:46:36,411 - INFO - Average interval width: 0.290466\n2025-10-04 03:46:36,411 - INFO - Robustness evaluation results:\n2025-10-04 03:46:36,411 - INFO -   original_coverage: 0.9940\n2025-10-04 03:46:36,411 - INFO -   shifted_coverage: 0.7520\n2025-10-04 03:46:36,411 - INFO -   coverage_difference: 0.2420\n2025-10-04 03:46:36,412 - INFO -   original_avg_width: 0.2905\n2025-10-04 03:46:36,412 - INFO -   shifted_avg_width: 0.2905\n2025-10-04 03:46:36,412 - INFO -   width_increase: 0.0000\n2025-10-04 03:46:36,412 - INFO -   robustness_ratio: 0.7565\n2025-10-04 03:46:36,412 - INFO - Completed Low Robustness configuration\n2025-10-04 03:46:36,412 - INFO - \nTesting configuration: Medium Robustness\n2025-10-04 03:46:36,412 - INFO - Parameters: epsilon=0.1, rho=0.05\n2025-10-04 03:46:36,412 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.1, rho=0.05\n2025-10-04 03:46:36,412 - INFO - Fitting robust conformal predictor\n2025-10-04 03:46:36,412 - INFO - Calculating robust quantile threshold\n2025-10-04 03:46:36,412 - INFO - Standard quantile: 0.093045\n2025-10-04 03:46:36,412 - INFO - Robust quantile (before epsilon): 0.108675\n2025-10-04 03:46:36,412 - INFO - Final robust quantile: 0.208675\n2025-10-04 03:46:36,412 - INFO - Successfully fitted model with quantile threshold: 0.208675\n2025-10-04 03:46:36,412 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:36,412 - INFO - Test coverage: 1.000 (target: 0.9)\n2025-10-04 03:46:36,412 - INFO - Average interval width: 0.417350\n2025-10-04 03:46:36,412 - INFO - Evaluating model robustness under distribution shifts\n2025-10-04 03:46:36,412 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:36,413 - INFO - Test coverage: 0.908 (target: 0.9)\n2025-10-04 03:46:36,413 - INFO - Average interval width: 0.417350\n2025-10-04 03:46:36,413 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:36,413 - INFO - Test coverage: 1.000 (target: 0.9)\n2025-10-04 03:46:36,413 - INFO - Average interval width: 0.417350\n2025-10-04 03:46:36,413 - INFO - Robustness evaluation results:\n2025-10-04 03:46:36,413 - INFO -   original_coverage: 1.0000\n2025-10-04 03:46:36,413 - INFO -   shifted_coverage: 0.9080\n2025-10-04 03:46:36,413 - INFO -   coverage_difference: 0.0920\n2025-10-04 03:46:36,413 - INFO -   original_avg_width: 0.4173\n2025-10-04 03:46:36,413 - INFO -   shifted_avg_width: 0.4173\n2025-10-04 03:46:36,413 - INFO -   width_increase: -0.0000\n2025-10-04 03:46:36,413 - INFO -   robustness_ratio: 0.9080\n2025-10-04 03:46:36,413 - INFO - Completed Medium Robustness configuration\n2025-10-04 03:46:36,413 - INFO - \nTesting configuration: High Robustness\n2025-10-04 03:46:36,413 - INFO - Parameters: epsilon=0.2, rho=0.1\n2025-10-04 03:46:36,413 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.2, rho=0.1\n2025-10-04 03:46:36,413 - INFO - Fitting robust conformal predictor\n2025-10-04 03:46:36,413 - INFO - Calculating robust quantile threshold\n2025-10-04 03:46:36,413 - INFO - Standard quantile: 0.093892\n2025-10-04 03:46:36,413 - INFO - Robust quantile (before epsilon): 0.193313\n2025-10-04 03:46:36,413 - INFO - Final robust quantile: 0.393313\n2025-10-04 03:46:36,413 - INFO - Successfully fitted model with quantile threshold: 0.393313\n2025-10-04 03:46:36,413 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:36,414 - INFO - Test coverage: 1.000 (target: 0.9)\n2025-10-04 03:46:36,414 - INFO - Average interval width: 0.786625\n2025-10-04 03:46:36,414 - INFO - Evaluating model robustness under distribution shifts\n2025-10-04 03:46:36,414 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:36,414 - INFO - Test coverage: 0.998 (target: 0.9)\n2025-10-04 03:46:36,414 - INFO - Average interval width: 0.786625\n2025-10-04 03:46:36,414 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:36,414 - INFO - Test coverage: 1.000 (target: 0.9)\n2025-10-04 03:46:36,414 - INFO - Average interval width: 0.786625\n2025-10-04 03:46:36,414 - INFO - Robustness evaluation results:\n2025-10-04 03:46:36,414 - INFO -   original_coverage: 1.0000\n2025-10-04 03:46:36,414 - INFO -   shifted_coverage: 0.9980\n2025-10-04 03:46:36,414 - INFO -   coverage_difference: 0.0020\n2025-10-04 03:46:36,414 - INFO -   original_avg_width: 0.7866\n2025-10-04 03:46:36,414 - INFO -   shifted_avg_width: 0.7866\n2025-10-04 03:46:36,414 - INFO -   width_increase: 0.0000\n2025-10-04 03:46:36,414 - INFO -   robustness_ratio: 0.9980\n2025-10-04 03:46:36,414 - INFO - Completed High Robustness configuration\n2025-10-04 03:46:36,414 - INFO - \n============================================================\n2025-10-04 03:46:36,414 - INFO - FINAL RESULTS SUMMARY\n2025-10-04 03:46:36,414 - INFO - ============================================================\n2025-10-04 03:46:36,421 - INFO - \nConfiguration: Standard\n2025-10-04 03:46:36,421 - INFO -   Coverage: 0.896 (Target: 0.9)\n2025-10-04 03:46:36,421 - INFO -   Avg Interval Width: 0.182919\n2025-10-04 03:46:36,421 - INFO -   Robustness Ratio: 0.636\n2025-10-04 03:46:36,421 - INFO -   Coverage Under Shift: 0.566\n2025-10-04 03:46:36,421 - INFO - \nConfiguration: Low Robustness\n2025-10-04 03:46:36,421 - INFO -   Coverage: 0.986 (Target: 0.9)\n2025-10-04 03:46:36,421 - INFO -   Avg Interval Width: 0.290466\n2025-10-04 03:46:36,421 - INFO -   Robustness Ratio: 0.757\n2025-10-04 03:46:36,422 - INFO -   Coverage Under Shift: 0.752\n2025-10-04 03:46:36,422 - INFO - \nConfiguration: Medium Robustness\n2025-10-04 03:46:36,422 - INFO -   Coverage: 1.000 (Target: 0.9)\n2025-10-04 03:46:36,422 - INFO -   Avg Interval Width: 0.417350\n2025-10-04 03:46:36,422 - INFO -   Robustness Ratio: 0.908\n2025-10-04 03:46:36,422 - INFO -   Coverage Under Shift: 0.908\n2025-10-04 03:46:36,422 - INFO - \nConfiguration: High Robustness\n2025-10-04 03:46:36,422 - INFO -   Coverage: 1.000 (Target: 0.9)\n2025-10-04 03:46:36,422 - INFO -   Avg Interval Width: 0.786625\n2025-10-04 03:46:36,422 - INFO -   Robustness Ratio: 0.998\n2025-10-04 03:46:36,422 - INFO -   Coverage Under Shift: 0.998\n2025-10-04 03:46:36,423 - INFO - \n============================================================\n2025-10-04 03:46:36,423 - INFO - BEST CONFIGURATION ANALYSIS\n2025-10-04 03:46:36,423 - INFO - ============================================================\n2025-10-04 03:46:36,423 - INFO - Best configuration: High Robustness\n2025-10-04 03:46:36,423 - INFO - Parameters: epsilon=0.2, rho=0.1\n2025-10-04 03:46:36,423 - INFO - Robustness ratio: 0.998\n2025-10-04 03:46:36,423 - INFO - Coverage under shift: 0.998\n2025-10-04 03:46:36,423 - INFO - Average interval width: 0.786625\n2025-10-04 03:46:36,423 - INFO - \n============================================================\n2025-10-04 03:46:36,423 - INFO - KEY INSIGHTS\n2025-10-04 03:46:36,423 - INFO - ============================================================\n2025-10-04 03:46:36,423 - INFO - 1. Higher robustness parameters (epsilon, rho) generally improve coverage under distribution shifts\n2025-10-04 03:46:36,423 - INFO - 2. There is a trade-off between robustness and prediction interval width\n2025-10-04 03:46:36,423 - INFO - 3. The optimal configuration balances coverage guarantees with interval precision\n2025-10-04 03:46:36,423 - INFO - 4. L\u00e9vy-Prokhorov methodology provides principled robustness against both local and global distribution shifts\n2025-10-04 03:46:36,423 - INFO - \nExperiment completed successfully!\n2025-10-04 03:46:36,423 - INFO - The results demonstrate the effectiveness of L\u00e9vy-Prokhorov robust conformal prediction\n2025-10-04 03:46:36,423 - INFO - for maintaining coverage guarantees in financial time series with distribution shifts.\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 13613.52 ms	Phase: invoke	Status: error	Error Type: Runtime.ExitError
+
+START RequestId: a4535049-3ebe-40a0-a9ee-149c957bd11d Version: $LATEST
+
+RequestId: a4535049-3ebe-40a0-a9ee-149c957bd11d Error: Runtime exited without providing a reason
+Runtime.ExitError
+
+END RequestId: a4535049-3ebe-40a0-a9ee-149c957bd11d
+
+REPORT RequestId: a4535049-3ebe-40a0-a9ee-149c957bd11d	Duration: 13615.49 ms	Billed Duration: 13616 ms	Memory Size: 3008 MB	Max Memory Used: 135 MB	
+
+=== Experiment Errors ===
+
+2025-10-04 03:46:37,692 - INFO - Lévy-Prokhorov Robust Conformal Prediction for Financial Data
+
+2025-10-04 03:46:37,692 - INFO - This implementation demonstrates robust uncertainty quantification under distribution shifts
+
+2025-10-04 03:46:37,692 - INFO - Starting Lévy-Prokhorov Robust Conformal Prediction Experiment
+
+2025-10-04 03:46:37,692 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.1, rho=0.05
+
+2025-10-04 03:46:37,692 - INFO - Generating 2000 synthetic financial data points
+
+2025-10-04 03:46:37,701 - INFO - Generated synthetic data: X shape (1995, 5), y shape (1995,)
+
+2025-10-04 03:46:37,701 - INFO - Data split - Calibration: 1495, Test: 500
+
+2025-10-04 03:46:37,701 - INFO - 
+
+Testing configuration: Standard
+
+2025-10-04 03:46:37,702 - INFO - Parameters: epsilon=0.0, rho=0.0
+
+2025-10-04 03:46:37,702 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.0, rho=0.0
+
+2025-10-04 03:46:37,702 - INFO - Fitting robust conformal predictor
+
+2025-10-04 03:46:37,702 - INFO - Calculating robust quantile threshold
+
+2025-10-04 03:46:37,702 - INFO - Standard quantile: 0.091460
+
+2025-10-04 03:46:37,702 - INFO - Robust quantile (before epsilon): 0.091460
+
+2025-10-04 03:46:37,702 - INFO - Final robust quantile: 0.091460
+
+2025-10-04 03:46:37,702 - INFO - Successfully fitted model with quantile threshold: 0.091460
+
+2025-10-04 03:46:37,702 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:37,702 - INFO - Test coverage: 0.896 (target: 0.9)
+
+2025-10-04 03:46:37,702 - INFO - Average interval width: 0.182919
+
+2025-10-04 03:46:37,702 - INFO - Evaluating model robustness under distribution shifts
+
+2025-10-04 03:46:37,703 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:37,703 - INFO - Test coverage: 0.566 (target: 0.9)
+
+2025-10-04 03:46:37,703 - INFO - Average interval width: 0.182919
+
+2025-10-04 03:46:37,703 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:37,703 - INFO - Test coverage: 0.890 (target: 0.9)
+
+2025-10-04 03:46:37,703 - INFO - Average interval width: 0.182919
+
+2025-10-04 03:46:37,703 - INFO - Robustness evaluation results:
+
+2025-10-04 03:46:37,703 - INFO -   original_coverage: 0.8900
+
+2025-10-04 03:46:37,703 - INFO -   shifted_coverage: 0.5660
+
+2025-10-04 03:46:37,703 - INFO -   coverage_difference: 0.3240
+
+2025-10-04 03:46:37,703 - INFO -   original_avg_width: 0.1829
+
+2025-10-04 03:46:37,703 - INFO -   shifted_avg_width: 0.1829
+
+2025-10-04 03:46:37,703 - INFO -   width_increase: -0.0000
+
+2025-10-04 03:46:37,703 - INFO -   robustness_ratio: 0.6360
+
+2025-10-04 03:46:37,703 - INFO - Completed Standard configuration
+
+2025-10-04 03:46:37,703 - INFO - 
+
+Testing configuration: Low Robustness
+
+2025-10-04 03:46:37,703 - INFO - Parameters: epsilon=0.05, rho=0.02
+
+2025-10-04 03:46:37,703 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.05, rho=0.02
+
+2025-10-04 03:46:37,703 - INFO - Fitting robust conformal predictor
+
+2025-10-04 03:46:37,704 - INFO - Calculating robust quantile threshold
+
+2025-10-04 03:46:37,704 - INFO - Standard quantile: 0.091315
+
+2025-10-04 03:46:37,704 - INFO - Robust quantile (before epsilon): 0.095233
+
+2025-10-04 03:46:37,704 - INFO - Final robust quantile: 0.145233
+
+2025-10-04 03:46:37,704 - INFO - Successfully fitted model with quantile threshold: 0.145233
+
+2025-10-04 03:46:37,704 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:37,704 - INFO - Test coverage: 0.986 (target: 0.9)
+
+2025-10-04 03:46:37,704 - INFO - Average interval width: 0.290466
+
+2025-10-04 03:46:37,704 - INFO - Evaluating model robustness under distribution shifts
+
+2025-10-04 03:46:37,704 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:37,704 - INFO - Test coverage: 0.752 (target: 0.9)
+
+2025-10-04 03:46:37,704 - INFO - Average interval width: 0.290466
+
+2025-10-04 03:46:37,704 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:37,704 - INFO - Test coverage: 0.994 (target: 0.9)
+
+2025-10-04 03:46:37,704 - INFO - Average interval width: 0.290466
+
+2025-10-04 03:46:37,704 - INFO - Robustness evaluation results:
+
+2025-10-04 03:46:37,705 - INFO -   original_coverage: 0.9940
+
+2025-10-04 03:46:37,705 - INFO -   shifted_coverage: 0.7520
+
+2025-10-04 03:46:37,705 - INFO -   coverage_difference: 0.2420
+
+2025-10-04 03:46:37,705 - INFO -   original_avg_width: 0.2905
+
+2025-10-04 03:46:37,705 - INFO -   shifted_avg_width: 0.2905
+
+2025-10-04 03:46:37,705 - INFO -   width_increase: 0.0000
+
+2025-10-04 03:46:37,705 - INFO -   robustness_ratio: 0.7565
+
+2025-10-04 03:46:37,705 - INFO - Completed Low Robustness configuration
+
+2025-10-04 03:46:37,705 - INFO - 
+
+Testing configuration: Medium Robustness
+
+2025-10-04 03:46:37,705 - INFO - Parameters: epsilon=0.1, rho=0.05
+
+2025-10-04 03:46:37,705 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.1, rho=0.05
+
+2025-10-04 03:46:37,705 - INFO - Fitting robust conformal predictor
+
+2025-10-04 03:46:37,705 - INFO - Calculating robust quantile threshold
+
+2025-10-04 03:46:37,705 - INFO - Standard quantile: 0.093045
+
+2025-10-04 03:46:37,705 - INFO - Robust quantile (before epsilon): 0.108675
+
+2025-10-04 03:46:37,705 - INFO - Final robust quantile: 0.208675
+
+2025-10-04 03:46:37,705 - INFO - Successfully fitted model with quantile threshold: 0.208675
+
+2025-10-04 03:46:37,705 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:37,705 - INFO - Test coverage: 1.000 (target: 0.9)
+
+2025-10-04 03:46:37,705 - INFO - Average interval width: 0.417350
+
+2025-10-04 03:46:37,705 - INFO - Evaluating model robustness under distribution shifts
+
+2025-10-04 03:46:37,706 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:37,706 - INFO - Test coverage: 0.908 (target: 0.9)
+
+2025-10-04 03:46:37,706 - INFO - Average interval width: 0.417350
+
+2025-10-04 03:46:37,706 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:37,706 - INFO - Test coverage: 1.000 (target: 0.9)
+
+2025-10-04 03:46:37,706 - INFO - Average interval width: 0.417350
+
+2025-10-04 03:46:37,706 - INFO - Robustness evaluation results:
+
+2025-10-04 03:46:37,706 - INFO -   original_coverage: 1.0000
+
+2025-10-04 03:46:37,706 - INFO -   shifted_coverage: 0.9080
+
+2025-10-04 03:46:37,706 - INFO -   coverage_difference: 0.0920
+
+2025-10-04 03:46:37,706 - INFO -   original_avg_width: 0.4173
+
+2025-10-04 03:46:37,706 - INFO -   shifted_avg_width: 0.4173
+
+2025-10-04 03:46:37,706 - INFO -   width_increase: -0.0000
+
+2025-10-04 03:46:37,706 - INFO -   robustness_ratio: 0.9080
+
+2025-10-04 03:46:37,706 - INFO - Completed Medium Robustness configuration
+
+2025-10-04 03:46:37,706 - INFO - 
+
+Testing configuration: High Robustness
+
+2025-10-04 03:46:37,706 - INFO - Parameters: epsilon=0.2, rho=0.1
+
+2025-10-04 03:46:37,706 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.2, rho=0.1
+
+2025-10-04 03:46:37,706 - INFO - Fitting robust conformal predictor
+
+2025-10-04 03:46:37,706 - INFO - Calculating robust quantile threshold
+
+2025-10-04 03:46:37,706 - INFO - Standard quantile: 0.093892
+
+2025-10-04 03:46:37,706 - INFO - Robust quantile (before epsilon): 0.193313
+
+2025-10-04 03:46:37,706 - INFO - Final robust quantile: 0.393313
+
+2025-10-04 03:46:37,707 - INFO - Successfully fitted model with quantile threshold: 0.393313
+
+2025-10-04 03:46:37,707 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:37,707 - INFO - Test coverage: 1.000 (target: 0.9)
+
+2025-10-04 03:46:37,707 - INFO - Average interval width: 0.786625
+
+2025-10-04 03:46:37,707 - INFO - Evaluating model robustness under distribution shifts
+
+2025-10-04 03:46:37,707 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:37,707 - INFO - Test coverage: 0.998 (target: 0.9)
+
+2025-10-04 03:46:37,707 - INFO - Average interval width: 0.786625
+
+2025-10-04 03:46:37,707 - INFO - Generating prediction intervals for 500 test points
+
+2025-10-04 03:46:37,707 - INFO - Test coverage: 1.000 (target: 0.9)
+
+2025-10-04 03:46:37,707 - INFO - Average interval width: 0.786625
+
+2025-10-04 03:46:37,707 - INFO - Robustness evaluation results:
+
+2025-10-04 03:46:37,707 - INFO -   original_coverage: 1.0000
+
+2025-10-04 03:46:37,707 - INFO -   shifted_coverage: 0.9980
+
+2025-10-04 03:46:37,707 - INFO -   coverage_difference: 0.0020
+
+2025-10-04 03:46:37,707 - INFO -   original_avg_width: 0.7866
+
+2025-10-04 03:46:37,707 - INFO -   shifted_avg_width: 0.7866
+
+2025-10-04 03:46:37,708 - INFO -   width_increase: 0.0000
+
+2025-10-04 03:46:37,708 - INFO -   robustness_ratio: 0.9980
+
+2025-10-04 03:46:37,708 - INFO - Completed High Robustness configuration
+
+2025-10-04 03:46:37,708 - INFO - 
+
+============================================================
+
+2025-10-04 03:46:37,708 - INFO - FINAL RESULTS SUMMARY
+
+2025-10-04 03:46:37,708 - INFO - ============================================================
+
+2025-10-04 03:46:37,709 - INFO - 
+
+Configuration: Standard
+
+2025-10-04 03:46:37,709 - INFO -   Coverage: 0.896 (Target: 0.9)
+
+2025-10-04 03:46:37,709 - INFO -   Avg Interval Width: 0.182919
+
+2025-10-04 03:46:37,709 - INFO -   Robustness Ratio: 0.636
+
+2025-10-04 03:46:37,709 - INFO -   Coverage Under Shift: 0.566
+
+2025-10-04 03:46:37,709 - INFO - 
+
+Configuration: Low Robustness
+
+2025-10-04 03:46:37,709 - INFO -   Coverage: 0.986 (Target: 0.9)
+
+2025-10-04 03:46:37,709 - INFO -   Avg Interval Width: 0.290466
+
+2025-10-04 03:46:37,709 - INFO -   Robustness Ratio: 0.757
+
+2025-10-04 03:46:37,709 - INFO -   Coverage Under Shift: 0.752
+
+2025-10-04 03:46:37,709 - INFO - 
+
+Configuration: Medium Robustness
+
+2025-10-04 03:46:37,709 - INFO -   Coverage: 1.000 (Target: 0.9)
+
+2025-10-04 03:46:37,709 - INFO -   Avg Interval Width: 0.417350
+
+2025-10-04 03:46:37,709 - INFO -   Robustness Ratio: 0.908
+
+2025-10-04 03:46:37,710 - INFO -   Coverage Under Shift: 0.908
+
+2025-10-04 03:46:37,710 - INFO - 
+
+Configuration: High Robustness
+
+2025-10-04 03:46:37,710 - INFO -   Coverage: 1.000 (Target: 0.9)
+
+2025-10-04 03:46:37,710 - INFO -   Avg Interval Width: 0.786625
+
+2025-10-04 03:46:37,710 - INFO -   Robustness Ratio: 0.998
+
+2025-10-04 03:46:37,710 - INFO -   Coverage Under Shift: 0.998
+
+2025-10-04 03:46:37,710 - INFO - 
+
+============================================================
+
+2025-10-04 03:46:37,710 - INFO - BEST CONFIGURATION ANALYSIS
+
+2025-10-04 03:46:37,710 - INFO - ============================================================
+
+2025-10-04 03:46:37,710 - INFO - Best configuration: High Robustness
+
+2025-10-04 03:46:37,710 - INFO - Parameters: epsilon=0.2, rho=0.1
+
+2025-10-04 03:46:37,710 - INFO - Robustness ratio: 0.998
+
+2025-10-04 03:46:37,710 - INFO - Coverage under shift: 0.998
+
+2025-10-04 03:46:37,710 - INFO - Average interval width: 0.786625
+
+2025-10-04 03:46:37,710 - INFO - 
+
+============================================================
+
+2025-10-04 03:46:37,710 - INFO - KEY INSIGHTS
+
+2025-10-04 03:46:37,710 - INFO - ============================================================
+
+2025-10-04 03:46:37,711 - INFO - 1. Higher robustness parameters (epsilon, rho) generally improve coverage under distribution shifts
+
+2025-10-04 03:46:37,711 - INFO - 2. There is a trade-off between robustness and prediction interval width
+
+2025-10-04 03:46:37,711 - INFO - 3. The optimal configuration balances coverage guarantees with interval precision
+
+2025-10-04 03:46:37,711 - INFO - 4. Lévy-Prokhorov methodology provides principled robustness against both local and global distribution shifts
+
+2025-10-04 03:46:37,711 - INFO - 
+
+Experiment completed successfully!
+
+2025-10-04 03:46:37,711 - INFO - The results demonstrate the effectiveness of Lévy-Prokhorov robust conformal prediction
+
+2025-10-04 03:46:37,711 - INFO - for maintaining coverage guarantees in financial time series with distribution shifts.
+
+{
+
+"experimentStatusCode": 200,
+
+"body": {
+
+"message": "Experiment completed successfully",
+
+"returncode": 0,
+
+"stdout": "",
+
+"stderr": "2025-10-04 03:46:37,692 - INFO - L\u00e9vy-Prokhorov Robust Conformal Prediction for Financial Data\n2025-10-04 03:46:37,692 - INFO - This implementation demonstrates robust uncertainty quantification under distribution shifts\n2025-10-04 03:46:37,692 - INFO - Starting L\u00e9vy-Prokhorov Robust Conformal Prediction Experiment\n2025-10-04 03:46:37,692 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.1, rho=0.05\n2025-10-04 03:46:37,692 - INFO - Generating 2000 synthetic financial data points\n2025-10-04 03:46:37,701 - INFO - Generated synthetic data: X shape (1995, 5), y shape (1995,)\n2025-10-04 03:46:37,701 - INFO - Data split - Calibration: 1495, Test: 500\n2025-10-04 03:46:37,701 - INFO - \nTesting configuration: Standard\n2025-10-04 03:46:37,702 - INFO - Parameters: epsilon=0.0, rho=0.0\n2025-10-04 03:46:37,702 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.0, rho=0.0\n2025-10-04 03:46:37,702 - INFO - Fitting robust conformal predictor\n2025-10-04 03:46:37,702 - INFO - Calculating robust quantile threshold\n2025-10-04 03:46:37,702 - INFO - Standard quantile: 0.091460\n2025-10-04 03:46:37,702 - INFO - Robust quantile (before epsilon): 0.091460\n2025-10-04 03:46:37,702 - INFO - Final robust quantile: 0.091460\n2025-10-04 03:46:37,702 - INFO - Successfully fitted model with quantile threshold: 0.091460\n2025-10-04 03:46:37,702 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:37,702 - INFO - Test coverage: 0.896 (target: 0.9)\n2025-10-04 03:46:37,702 - INFO - Average interval width: 0.182919\n2025-10-04 03:46:37,702 - INFO - Evaluating model robustness under distribution shifts\n2025-10-04 03:46:37,703 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:37,703 - INFO - Test coverage: 0.566 (target: 0.9)\n2025-10-04 03:46:37,703 - INFO - Average interval width: 0.182919\n2025-10-04 03:46:37,703 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:37,703 - INFO - Test coverage: 0.890 (target: 0.9)\n2025-10-04 03:46:37,703 - INFO - Average interval width: 0.182919\n2025-10-04 03:46:37,703 - INFO - Robustness evaluation results:\n2025-10-04 03:46:37,703 - INFO -   original_coverage: 0.8900\n2025-10-04 03:46:37,703 - INFO -   shifted_coverage: 0.5660\n2025-10-04 03:46:37,703 - INFO -   coverage_difference: 0.3240\n2025-10-04 03:46:37,703 - INFO -   original_avg_width: 0.1829\n2025-10-04 03:46:37,703 - INFO -   shifted_avg_width: 0.1829\n2025-10-04 03:46:37,703 - INFO -   width_increase: -0.0000\n2025-10-04 03:46:37,703 - INFO -   robustness_ratio: 0.6360\n2025-10-04 03:46:37,703 - INFO - Completed Standard configuration\n2025-10-04 03:46:37,703 - INFO - \nTesting configuration: Low Robustness\n2025-10-04 03:46:37,703 - INFO - Parameters: epsilon=0.05, rho=0.02\n2025-10-04 03:46:37,703 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.05, rho=0.02\n2025-10-04 03:46:37,703 - INFO - Fitting robust conformal predictor\n2025-10-04 03:46:37,704 - INFO - Calculating robust quantile threshold\n2025-10-04 03:46:37,704 - INFO - Standard quantile: 0.091315\n2025-10-04 03:46:37,704 - INFO - Robust quantile (before epsilon): 0.095233\n2025-10-04 03:46:37,704 - INFO - Final robust quantile: 0.145233\n2025-10-04 03:46:37,704 - INFO - Successfully fitted model with quantile threshold: 0.145233\n2025-10-04 03:46:37,704 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:37,704 - INFO - Test coverage: 0.986 (target: 0.9)\n2025-10-04 03:46:37,704 - INFO - Average interval width: 0.290466\n2025-10-04 03:46:37,704 - INFO - Evaluating model robustness under distribution shifts\n2025-10-04 03:46:37,704 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:37,704 - INFO - Test coverage: 0.752 (target: 0.9)\n2025-10-04 03:46:37,704 - INFO - Average interval width: 0.290466\n2025-10-04 03:46:37,704 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:37,704 - INFO - Test coverage: 0.994 (target: 0.9)\n2025-10-04 03:46:37,704 - INFO - Average interval width: 0.290466\n2025-10-04 03:46:37,704 - INFO - Robustness evaluation results:\n2025-10-04 03:46:37,705 - INFO -   original_coverage: 0.9940\n2025-10-04 03:46:37,705 - INFO -   shifted_coverage: 0.7520\n2025-10-04 03:46:37,705 - INFO -   coverage_difference: 0.2420\n2025-10-04 03:46:37,705 - INFO -   original_avg_width: 0.2905\n2025-10-04 03:46:37,705 - INFO -   shifted_avg_width: 0.2905\n2025-10-04 03:46:37,705 - INFO -   width_increase: 0.0000\n2025-10-04 03:46:37,705 - INFO -   robustness_ratio: 0.7565\n2025-10-04 03:46:37,705 - INFO - Completed Low Robustness configuration\n2025-10-04 03:46:37,705 - INFO - \nTesting configuration: Medium Robustness\n2025-10-04 03:46:37,705 - INFO - Parameters: epsilon=0.1, rho=0.05\n2025-10-04 03:46:37,705 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.1, rho=0.05\n2025-10-04 03:46:37,705 - INFO - Fitting robust conformal predictor\n2025-10-04 03:46:37,705 - INFO - Calculating robust quantile threshold\n2025-10-04 03:46:37,705 - INFO - Standard quantile: 0.093045\n2025-10-04 03:46:37,705 - INFO - Robust quantile (before epsilon): 0.108675\n2025-10-04 03:46:37,705 - INFO - Final robust quantile: 0.208675\n2025-10-04 03:46:37,705 - INFO - Successfully fitted model with quantile threshold: 0.208675\n2025-10-04 03:46:37,705 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:37,705 - INFO - Test coverage: 1.000 (target: 0.9)\n2025-10-04 03:46:37,705 - INFO - Average interval width: 0.417350\n2025-10-04 03:46:37,705 - INFO - Evaluating model robustness under distribution shifts\n2025-10-04 03:46:37,706 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:37,706 - INFO - Test coverage: 0.908 (target: 0.9)\n2025-10-04 03:46:37,706 - INFO - Average interval width: 0.417350\n2025-10-04 03:46:37,706 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:37,706 - INFO - Test coverage: 1.000 (target: 0.9)\n2025-10-04 03:46:37,706 - INFO - Average interval width: 0.417350\n2025-10-04 03:46:37,706 - INFO - Robustness evaluation results:\n2025-10-04 03:46:37,706 - INFO -   original_coverage: 1.0000\n2025-10-04 03:46:37,706 - INFO -   shifted_coverage: 0.9080\n2025-10-04 03:46:37,706 - INFO -   coverage_difference: 0.0920\n2025-10-04 03:46:37,706 - INFO -   original_avg_width: 0.4173\n2025-10-04 03:46:37,706 - INFO -   shifted_avg_width: 0.4173\n2025-10-04 03:46:37,706 - INFO -   width_increase: -0.0000\n2025-10-04 03:46:37,706 - INFO -   robustness_ratio: 0.9080\n2025-10-04 03:46:37,706 - INFO - Completed Medium Robustness configuration\n2025-10-04 03:46:37,706 - INFO - \nTesting configuration: High Robustness\n2025-10-04 03:46:37,706 - INFO - Parameters: epsilon=0.2, rho=0.1\n2025-10-04 03:46:37,706 - INFO - Initialized LP Robust Conformal Predictor with alpha=0.1, epsilon=0.2, rho=0.1\n2025-10-04 03:46:37,706 - INFO - Fitting robust conformal predictor\n2025-10-04 03:46:37,706 - INFO - Calculating robust quantile threshold\n2025-10-04 03:46:37,706 - INFO - Standard quantile: 0.093892\n2025-10-04 03:46:37,706 - INFO - Robust quantile (before epsilon): 0.193313\n2025-10-04 03:46:37,706 - INFO - Final robust quantile: 0.393313\n2025-10-04 03:46:37,707 - INFO - Successfully fitted model with quantile threshold: 0.393313\n2025-10-04 03:46:37,707 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:37,707 - INFO - Test coverage: 1.000 (target: 0.9)\n2025-10-04 03:46:37,707 - INFO - Average interval width: 0.786625\n2025-10-04 03:46:37,707 - INFO - Evaluating model robustness under distribution shifts\n2025-10-04 03:46:37,707 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:37,707 - INFO - Test coverage: 0.998 (target: 0.9)\n2025-10-04 03:46:37,707 - INFO - Average interval width: 0.786625\n2025-10-04 03:46:37,707 - INFO - Generating prediction intervals for 500 test points\n2025-10-04 03:46:37,707 - INFO - Test coverage: 1.000 (target: 0.9)\n2025-10-04 03:46:37,707 - INFO - Average interval width: 0.786625\n2025-10-04 03:46:37,707 - INFO - Robustness evaluation results:\n2025-10-04 03:46:37,707 - INFO -   original_coverage: 1.0000\n2025-10-04 03:46:37,707 - INFO -   shifted_coverage: 0.9980\n2025-10-04 03:46:37,707 - INFO -   coverage_difference: 0.0020\n2025-10-04 03:46:37,707 - INFO -   original_avg_width: 0.7866\n2025-10-04 03:46:37,707 - INFO -   shifted_avg_width: 0.7866\n2025-10-04 03:46:37,708 - INFO -   width_increase: 0.0000\n2025-10-04 03:46:37,708 - INFO -   robustness_ratio: 0.9980\n2025-10-04 03:46:37,708 - INFO - Completed High Robustness configuration\n2025-10-04 03:46:37,708 - INFO - \n============================================================\n2025-10-04 03:46:37,708 - INFO - FINAL RESULTS SUMMARY\n2025-10-04 03:46:37,708 - INFO - ============================================================\n2025-10-04 03:46:37,709 - INFO - \nConfiguration: Standard\n2025-10-04 03:46:37,709 - INFO -   Coverage: 0.896 (Target: 0.9)\n2025-10-04 03:46:37,709 - INFO -   Avg Interval Width: 0.182919\n2025-10-04 03:46:37,709 - INFO -   Robustness Ratio: 0.636\n2025-10-04 03:46:37,709 - INFO -   Coverage Under Shift: 0.566\n2025-10-04 03:46:37,709 - INFO - \nConfiguration: Low Robustness\n2025-10-04 03:46:37,709 - INFO -   Coverage: 0.986 (Target: 0.9)\n2025-10-04 03:46:37,709 - INFO -   Avg Interval Width: 0.290466\n2025-10-04 03:46:37,709 - INFO -   Robustness Ratio: 0.757\n2025-10-04 03:46:37,709 - INFO -   Coverage Under Shift: 0.752\n2025-10-04 03:46:37,709 - INFO - \nConfiguration: Medium Robustness\n2025-10-04 03:46:37,709 - INFO -   Coverage: 1.000 (Target: 0.9)\n2025-10-04 03:46:37,709 - INFO -   Avg Interval Width: 0.417350\n2025-10-04 03:46:37,709 - INFO -   Robustness Ratio: 0.908\n2025-10-04 03:46:37,710 - INFO -   Coverage Under Shift: 0.908\n2025-10-04 03:46:37,710 - INFO - \nConfiguration: High Robustness\n2025-10-04 03:46:37,710 - INFO -   Coverage: 1.000 (Target: 0.9)\n2025-10-04 03:46:37,710 - INFO -   Avg Interval Width: 0.786625\n2025-10-04 03:46:37,710 - INFO -   Robustness Ratio: 0.998\n2025-10-04 03:46:37,710 - INFO -   Coverage Under Shift: 0.998\n2025-10-04 03:46:37,710 - INFO - \n============================================================\n2025-10-04 03:46:37,710 - INFO - BEST CONFIGURATION ANALYSIS\n2025-10-04 03:46:37,710 - INFO - ============================================================\n2025-10-04 03:46:37,710 - INFO - Best configuration: High Robustness\n2025-10-04 03:46:37,710 - INFO - Parameters: epsilon=0.2, rho=0.1\n2025-10-04 03:46:37,710 - INFO - Robustness ratio: 0.998\n2025-10-04 03:46:37,710 - INFO - Coverage under shift: 0.998\n2025-10-04 03:46:37,710 - INFO - Average interval width: 0.786625\n2025-10-04 03:46:37,710 - INFO - \n============================================================\n2025-10-04 03:46:37,710 - INFO - KEY INSIGHTS\n2025-10-04 03:46:37,710 - INFO - ============================================================\n2025-10-04 03:46:37,711 - INFO - 1. Higher robustness parameters (epsilon, rho) generally improve coverage under distribution shifts\n2025-10-04 03:46:37,711 - INFO - 2. There is a trade-off between robustness and prediction interval width\n2025-10-04 03:46:37,711 - INFO - 3. The optimal configuration balances coverage guarantees with interval precision\n2025-10-04 03:46:37,711 - INFO - 4. L\u00e9vy-Prokhorov methodology provides principled robustness against both local and global distribution shifts\n2025-10-04 03:46:37,711 - INFO - \nExperiment completed successfully!\n2025-10-04 03:46:37,711 - INFO - The results demonstrate the effectiveness of L\u00e9vy-Prokhorov robust conformal prediction\n2025-10-04 03:46:37,711 - INFO - for maintaining coverage guarantees in financial time series with distribution shifts.\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 1261.96 ms	Phase: init	Status: error	Error Type: Runtime.ExitError
+
